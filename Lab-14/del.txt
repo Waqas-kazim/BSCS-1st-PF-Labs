@@ -1,0 +1,1 @@
+find . -type f -executable -not -name "*.sh" -not -path "*/.*" -delete
