@@ -8,11 +8,12 @@ main(){
     ifstream file("q2.txt");
     if(file.is_open()){
         while(getline(file, line)){
-            cout << line << '\n';
+            cout << line << endl;
         }
         file.close();
+        return 0;
     } else {
-        cout << "Error opening file.\n";
+        cout << "Error opening file." << endl;
         return 1;
     }
 }

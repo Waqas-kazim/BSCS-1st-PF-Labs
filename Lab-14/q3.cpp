@@ -9,10 +9,11 @@ main(){
     if(file.is_open()){
         cout << "Enter a string: ";
         getline(cin, input);
-        file << input << '\n';
+        file << input << endl;
         file.close();
+        return 0;
     } else {
-        cout << "Error creating file.\n";
+        cout << "Error creating file." << endl;
         return 1;
     }
 }

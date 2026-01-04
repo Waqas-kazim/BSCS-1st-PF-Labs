@@ -6,11 +6,11 @@ main(){
     ofstream file("q4.txt");
     if(file.is_open()){
         for(int i = 1; i <= 10; i++){
-            file << i << '\n';
+            file <<i<< endl;
         }
         file.close();
     } else {
-        cout << "Error creating file.\n";
+        cout << "Error creating file." << endl;
         return 1;
     }
 }

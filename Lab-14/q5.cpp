@@ -8,9 +8,9 @@ main()
     fin.open("q5.txt");
     int number;
     int sum= 0;
-    while (fin >> number)
+    while (fin>> number)
     {
-        sum = sum + number;
+        sum= sum+ number;
     }
     cout << "The sum is: " << sum << endl;
     fin.close();

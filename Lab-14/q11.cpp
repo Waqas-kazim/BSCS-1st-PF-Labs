@@ -21,7 +21,7 @@ int main() {
         if (file1.eof() && file2.eof()) {
             break; // Both files ended, they are identical
         }
-        if (file1.eof() || file2.eof() || ch1 != ch2) {
+        if (file1.eof()|| file2.eof()||ch1 != ch2) {
             areIdentical = false;
             break; // Files differ in length or content
         }

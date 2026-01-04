@@ -4,11 +4,11 @@
 #include <string>
 using namespace std;
 int main(){
-    string targetWord, replacementWord;
+    string targetWord,replacementWord;
     cout << "Enter the word to be replaced: ";
-    cin >> targetWord;
+    cin >>targetWord;
     cout << "Enter the replacement word: ";
-    cin >> replacementWord;
+    cin >>replacementWord;
 
     ifstream fin("q9.txt");
     if(!fin.is_open()){
@@ -18,18 +18,18 @@ int main(){
 
     string fileContent;
     string word;
-    while(fin >> word){
-        if(word == targetWord){
-            fileContent += replacementWord + " ";
+    while(fin>> word){
+        if(word ==targetWord){
+            fileContent+= replacementWord + " ";
         }else{
-            fileContent += word + " ";
+            fileContent+= word + " ";
         }
     }
     fin.close();
 
     ofstream fout("q9.txt");
     if(!fout.is_open()){
-        cout << "Unable to open file for writing" << endl;
+        cout<< "Unable to open file for writing" << endl;
         return 1;
     }
 

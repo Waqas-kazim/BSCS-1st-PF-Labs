@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     ifstream inputFile("q13.txt");
     if (!inputFile) {
-        cerr << "Unable to open file q13.txt"<<endl;
-        return 1; // Exit with error code
+        cerr <<"Unable to open file q13.txt"<<endl;
+        return 1; 
     }
 
     int number;
@@ -14,7 +14,7 @@ int main() {
     int oddCount = 0;
 
     while (inputFile >> number) {
-        if (number % 2 == 0) {
+        if (number %2== 0) {
             evenCount++;
         } else {
             oddCount++;
@@ -22,9 +22,8 @@ int main() {
     }
 
     inputFile.close();
-
-    cout << "Even numbers count: " << evenCount << endl;
-    cout << "Odd numbers count: " << oddCount << endl;
+    cout <<"Even numbers count: " << evenCount << endl;
+    cout <<"Odd numbers count: "<< oddCount << endl;
 
     return 0;
 }
